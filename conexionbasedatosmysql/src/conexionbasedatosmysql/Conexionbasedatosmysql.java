@@ -4,6 +4,8 @@
  */
 package conexionbasedatosmysql;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author CUTT 5
@@ -17,6 +19,7 @@ public class Conexionbasedatosmysql {
 
         System.out.println("Hola mundo");
 
+        //UsuariosSQL un metodo para insertar, metodo para select y un update y delate 
     }
     
 }
