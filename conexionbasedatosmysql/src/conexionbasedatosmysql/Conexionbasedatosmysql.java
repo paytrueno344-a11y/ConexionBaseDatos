@@ -4,6 +4,7 @@
  */
 package conexionbasedatosmysql;
 
+import conexionbasedatosmysql.usuariossql.UsuariosSQL;
 import javax.swing.JOptionPane;
 
 /**
@@ -15,11 +16,13 @@ public class Conexionbasedatosmysql {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+   public static void main(String[] args) {
 
-        System.out.println("Hola mundo");
+        UsuariosSQL usuarios = new UsuariosSQL();
+        int resultado = usuarios.insertaUsuario("Miguelito", "191237");
+//        System.out.println(resultado);
+        usuarios.consultaUsuarios();
 
-        //UsuariosSQL un metodo para insertar, metodo para select y un update y delate 
     }
     
 }
